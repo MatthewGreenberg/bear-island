@@ -15,7 +15,9 @@ const StyledMainContent = styled.main`
 const StyledImageWrapper = styled.div`
     border-radius: 50%;
 
-    span {
+    video {
+        width: 254px;
+        height: 254px;
         border-radius: 50%;
         box-shadow: 0px 0px 0px 7px white,
             -4px -4px 10px 10px rgba(0, 0, 0, 0.25);
@@ -35,7 +37,13 @@ const MainContent = () => {
     return (
         <StyledMainContent>
             <StyledImageWrapper>
-                <Image alt="bears" src="/bears.gif" height={304} width={304} />
+                <video
+                    src="/bears.mp4"
+                    autoPlay={true}
+                    loop
+                    muted={true}
+                    playsInline={true}
+                />
             </StyledImageWrapper>
             <StyledContentWrapper>
                 <p>

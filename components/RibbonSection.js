@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import Emoji from './Emoji'
 import { Element } from 'react-scroll'
+import { sizes } from '../helpers/sizes'
 
 const RibbonSectionStyled = styled(Element)`
     display: flex;
@@ -35,6 +36,9 @@ const RibbonDescription = styled.p`
     background: rgba(255, 255, 255, 0.7);
     padding: 15px;
     border-radius: 10px;
+    @media (max-width: ${sizes.tb}) {
+        max-width: 550px;
+    }
 `
 
 const ItemsWrapper = styled.div`
