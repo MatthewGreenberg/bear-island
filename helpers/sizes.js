@@ -7,7 +7,7 @@ export const st = '1280px'
 // Small Desktop / Landscape Tablet
 export const md = '1024px'
 // Portrait Tablet
-export const tb = '768px'
+export const tb = '852px'
 // Mobile Landscape
 export const mbh = '640px'
 // Mobile Portrait

@@ -15,7 +15,6 @@ const PaddingWrapper = styled.div`
     padding: 40px;
     @media (max-width: ${sizes.mb}) {
         padding: 30px 20px;
-        width: 100%;
     }
 `
 
