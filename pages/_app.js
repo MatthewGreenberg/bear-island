@@ -4,7 +4,7 @@ import { sizes } from '../helpers/sizes'
 const GlobalStyle = createGlobalStyle`
 #__next {
   @media(max-width: ${sizes.tb}) {
-    width: 170%;
+    width: 200%;
   }
 }
 @font-face {

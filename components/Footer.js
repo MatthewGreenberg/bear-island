@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
+import { sizes } from '../helpers/sizes'
 const red = '#FF2A00'
 const yellow = '#FFE600'
 const blue = '#00C3FF'
@@ -20,6 +21,9 @@ const StyledTitle = styled.h1`
     color: ${red};
     text-shadow: -10px -10px 0 ${yellow}, -4px -25px 0 ${blue};
     align-self: center;
+    @media (max-width: ${sizes.mb}) {
+        font-size: 40px;
+    }
 `
 
 const SocialContainer = styled.div`

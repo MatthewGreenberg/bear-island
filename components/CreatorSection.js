@@ -21,6 +21,7 @@ const RibbonWrapper = styled.div`
         position: absolute;
         left: 50%;
         top: 32%;
+        white-space: nowrap;
         transform: translate(-50%, 0%);
         font-family: Adelia, sans-serif;
         font-size: 40px;

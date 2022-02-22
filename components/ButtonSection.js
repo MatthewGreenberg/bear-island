@@ -29,7 +29,7 @@ const StyledButton = styled(Link)`
         color: #292929;
         font-size: 23px;
         text-align: center;
-        max-width: 280px;
+        max-width: 200px;
         @media (max-width: ${sizes.tb}) {
             font-size: 18px;
         }
