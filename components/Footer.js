@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
+import { DISCORD, TWITTER } from '../helpers/links'
 import { sizes } from '../helpers/sizes'
 const red = '#FF2A00'
 const yellow = '#FFE600'
@@ -68,7 +69,7 @@ const Footer = () => {
                 />
             </StyledTitleContainer>
             <SocialContainer>
-                <StyledButton>
+                <StyledButton onClick={() => window.open(DISCORD, '_blank')}>
                     <Image
                         width={52}
                         height={52}
@@ -77,7 +78,7 @@ const Footer = () => {
                     />
                 </StyledButton>
 
-                <StyledButton>
+                <StyledButton onClick={() => window.open(TWITTER, '_blank')}>
                     <Image
                         width={52}
                         height={52}
