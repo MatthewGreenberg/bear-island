@@ -14,7 +14,7 @@ import { sizes } from '../helpers/sizes'
 const PaddingWrapper = styled.div`
     padding: 40px;
     @media (max-width: ${sizes.mb}) {
-        padding: 30px 20px;
+        padding: 30px 10px;
     }
 `
 
@@ -46,6 +46,10 @@ export default function Home() {
             <Head>
                 <title>Bear Island</title>
                 <meta name="description" content="Bear Island NFT!" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
                 <link rel="icon" href="/favicon.ico" />
                 <link
                     rel="preload"
@@ -59,7 +63,7 @@ export default function Home() {
                 <PaddingWrapper>
                     <StickyBear />
                     <Header />
-                    <MainContent />
+                    {/* <MainContent /> */}
                 </PaddingWrapper>
                 <Divider />
                 <PaddingWrapper>

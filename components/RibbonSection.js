@@ -25,6 +25,9 @@ const RibbonWrapper = styled.div`
         transform: translate(-50%, 0%);
         font-family: Adelia, sans-serif;
         font-size: 40px;
+        @media (max-width: ${sizes.mb}) {
+            font-size: 30px;
+        }
     }
 `
 const RibbonDescription = styled.p`
@@ -38,6 +41,9 @@ const RibbonDescription = styled.p`
     border-radius: 10px;
     @media (max-width: ${sizes.tb}) {
         max-width: 550px;
+    }
+    @media (max-width: ${sizes.mb}) {
+        max-width: 85%;
     }
 `
 
@@ -56,6 +62,12 @@ const Item = styled.div`
     background: lightgray;
     padding: 0 20px;
     border-radius: 10px;
+    @media (max-width: ${sizes.mb}) {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 25px;
+    }
 
     img {
         margin-right: 5px;

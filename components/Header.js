@@ -40,7 +40,8 @@ const StyledTitle = styled.h1`
         font-size: 50px;
     }
     @media (max-width: ${sizes.mb}) {
-        font-size: 40px;
+        font-size: 25px;
+        text-shadow: -4px -4px 0 ${yellow}, 0px -5px 0 ${blue};
     }
 `
 
@@ -48,11 +49,19 @@ const SocialContainer = styled.div`
     display: flex;
     gap: 10px;
     transition: opacity 0.25s;
+
+    @media (max-width: ${sizes.mb}) {
+        gap: 0px;
+    }
 `
 
 const StyledButton = styled.button`
     transform: rotate(0deg);
     transition: transform 0.25s;
+    @media (max-width: ${sizes.mb}) {
+        width: 40px;
+        height: 40px;
+    }
     &:hover {
         transform: rotate(20deg);
     }

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 import parse from 'html-react-parser'
 import { Element } from 'react-scroll'
+import { sizes } from '../helpers/sizes'
 
 const StyledFAQSection = styled(Element)`
     display: flex;
@@ -23,6 +24,9 @@ const RibbonWrapper = styled.div`
         transform: translate(-50%, 0%);
         font-family: Adelia, sans-serif;
         font-size: 40px;
+        @media (max-width: ${sizes.mb}) {
+            font-size: 30px;
+        }
     }
 `
 
@@ -38,6 +42,7 @@ export const CreatorWrapper = styled.div`
         background: lightgray;
         padding: 30px;
         border-radius: 10px;
+
         em {
             color: hotpink;
             display: inline;
@@ -64,13 +69,24 @@ const FAQWrapper = styled.div`
     padding: 20px;
     border-radius: 10px;
     width: 500px;
+    @media (max-width: ${sizes.mb}) {
+        width: 80%;
+    }
     h3 {
         font-family: 'Chelsea Market', cursive;
         font-size: 30px;
+        @media (max-width: ${sizes.mb}) {
+            font-size: 26px;
+            line-height: 25px;
+        }
     }
     p {
         font-size: 20px;
         line-height: 32.4px;
+        @media (max-width: ${sizes.mb}) {
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 `
 

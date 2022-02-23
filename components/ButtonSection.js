@@ -10,11 +10,17 @@ const StyledButtonSection = styled.div`
     align-items: center;
     justify-content: center;
     gap: 100px;
+    @media (max-width: ${sizes.mb}) {
+        gap: 20px;
+    }
 `
 const RowContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
+    @media (max-width: ${sizes.mb}) {
+        gap: 20px;
+    }
 `
 const StyledButton = styled(Link)`
     display: flex;
@@ -32,6 +38,14 @@ const StyledButton = styled(Link)`
         max-width: 200px;
         @media (max-width: ${sizes.tb}) {
             font-size: 18px;
+        }
+        @media (max-width: 533px) {
+            font-size: 14px;
+            max-width: 150px;
+        }
+        @media (max-width: 320px) {
+            font-size: 12px;
+            max-width: 150px;
         }
     }
 `

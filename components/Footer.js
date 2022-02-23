@@ -14,6 +14,9 @@ const StyledFooter = styled.footer`
     margin: 0;
     margin-top: 200px;
     padding: 0;
+    @media (max-width: ${sizes.mb}) {
+        padding: 10px;
+    }
 `
 const StyledTitle = styled.h1`
     font-size: 65px;
@@ -22,7 +25,7 @@ const StyledTitle = styled.h1`
     text-shadow: -10px -10px 0 ${yellow}, -4px -25px 0 ${blue};
     align-self: center;
     @media (max-width: ${sizes.mb}) {
-        font-size: 40px;
+        font-size: 30px;
     }
 `
 
@@ -34,6 +37,10 @@ const SocialContainer = styled.div`
 const StyledButton = styled.button`
     transform: rotate(0deg);
     transition: transform 0.25s;
+    @media (max-width: ${sizes.mb}) {
+        width: 50px;
+        height: 50px;
+    }
     &:hover {
         transform: rotate(20deg);
     }

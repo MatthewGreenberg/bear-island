@@ -25,6 +25,9 @@ const RibbonWrapper = styled.div`
         transform: translate(-50%, 0%);
         font-family: Adelia, sans-serif;
         font-size: 40px;
+        @media (max-width: ${sizes.mb}) {
+            font-size: 30px;
+        }
     }
 `
 
@@ -37,6 +40,7 @@ export const CreatorWrapper = styled.div`
         flex-direction: column;
         gap: 20px;
     }
+
     p {
         max-width: 500px;
         font-size: 20px;
@@ -44,6 +48,9 @@ export const CreatorWrapper = styled.div`
         background: lightgray;
         padding: 30px;
         border-radius: 10px;
+        @media (max-width: ${sizes.mb}) {
+            width: 80%;
+        }
         em {
             color: hotpink;
             display: inline;

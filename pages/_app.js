@@ -2,11 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 import { sizes } from '../helpers/sizes'
 
 const GlobalStyle = createGlobalStyle`
-#__next {
-  @media(max-width: ${sizes.tb}) {
-    width: 200%;
-  }
-}
+
 @font-face {
   font-family: "Adelia";
   src: url("/fonts/Adelia.otf");
@@ -26,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     font-family: 'Chelsea Market', cursive;
+     
   }
   button {
     border: none;
