@@ -20,8 +20,7 @@ const StyledButton = styled.button`
     top: 0;
     cursor: pointer;
     @media (max-width: ${sizes.mb}) {
-        width: 50px;
-        height: 50px;
+        display: none;
     }
     &:hover {
         transform: rotate(20deg);

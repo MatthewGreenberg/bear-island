@@ -26,7 +26,7 @@ const StyledTitle = styled.h1`
     text-shadow: -10px -10px 0 ${yellow}, -4px -25px 0 ${blue};
     align-self: center;
     @media (max-width: ${sizes.mb}) {
-        font-size: 30px;
+        display: none;
     }
 `
 
@@ -39,8 +39,8 @@ const StyledButton = styled.button`
     transform: rotate(0deg);
     transition: transform 0.25s;
     @media (max-width: ${sizes.mb}) {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
     &:hover {
         transform: rotate(20deg);

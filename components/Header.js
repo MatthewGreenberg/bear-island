@@ -14,6 +14,11 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     position: relative;
     z-index: 100;
+    @media (max-width: ${sizes.mb}) {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const StyledTitleContainer = styled.div`
@@ -40,7 +45,7 @@ const StyledTitle = styled.h1`
         font-size: 50px;
     }
     @media (max-width: ${sizes.mb}) {
-        font-size: 25px;
+        font-size: 40px;
         text-shadow: -4px -4px 0 ${yellow}, 0px -5px 0 ${blue};
     }
 `
@@ -49,18 +54,17 @@ const SocialContainer = styled.div`
     display: flex;
     gap: 10px;
     transition: opacity 0.25s;
-
-    @media (max-width: ${sizes.mb}) {
-        gap: 0px;
-    }
 `
 
 const StyledButton = styled.button`
     transform: rotate(0deg);
     transition: transform 0.25s;
     @media (max-width: ${sizes.mb}) {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
+        &.hidden {
+            display: none;
+        }
     }
     &:hover {
         transform: rotate(20deg);
@@ -70,7 +74,10 @@ const StyledButton = styled.button`
 const Header = () => {
     return (
         <StyledHeader>
-            <StyledButton style={{ opacity: 0, pointerEvents: 'none' }}>
+            <StyledButton
+                className="hidden"
+                style={{ opacity: 0, pointerEvents: 'none' }}
+            >
                 <Image src="/bear.webp" height={77} width={77} alt="bear" />
             </StyledButton>
             <StyledTitleContainer className="Header__title">
