@@ -103,7 +103,7 @@ export default function Home() {
                     name="twitter:description"
                     content="Welcome to Bear Island!"
                 />
-                <meta name="twitter:image" content="/og.png" />
+                <meta name="twitter:image" content="/creator.webp" />
             </Head>
             <SiteWrapper>
                 <StyledBG />
