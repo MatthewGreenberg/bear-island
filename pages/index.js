@@ -80,7 +80,7 @@ export default function Home() {
             <Head>
                 <title>Bear Island</title>
                 <meta property="og:title" content="Bear Island" />
-                <meta property="og:image" content="/og.png" />
+                <meta property="og:image" content="/twitter-bear.png" />
                 <meta name="description" content="Welcome to Bear Island!" />
                 <meta
                     name="viewport"
