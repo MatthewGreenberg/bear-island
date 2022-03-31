@@ -9,6 +9,7 @@ import CreatorSection from '../components/CreatorSection'
 import FAQSection from '../components/FAQSection'
 import Footer from '../components/Footer'
 import StickyBear from '../components/StickyBear'
+import Image from 'next/image'
 import { sizes } from '../helpers/sizes'
 
 const PaddingWrapper = styled.div`
@@ -44,9 +45,28 @@ const GenerativeImageWrapper = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    img {
+    flex-direction: column;
+    align-items: center;
+    #generative {
         position: relative;
         width: 30%;
+    }
+`
+const RibbonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    h1 {
+        position: absolute;
+        left: 50%;
+        top: 32%;
+        transform: translate(-50%, 0%);
+        font-family: Adelia, sans-serif;
+        font-size: 40px;
+        @media (max-width: ${sizes.mb}) {
+            font-size: 30px;
+        }
     }
 `
 
@@ -94,8 +114,23 @@ export default function Home() {
                 </PaddingWrapper>
                 <Divider />
                 <GenerativeImageWrapper>
-                    <img alt="generative project" src="/generative.gif" />
+                    <RibbonWrapper>
+                        <Image
+                            width={600}
+                            height={250}
+                            src="/ribbon.webp"
+                            alt="ribbon"
+                        />
+                        <h1>Coming Soon</h1>
+                    </RibbonWrapper>
+                    <img
+                        id="generative"
+                        alt="generative project"
+                        src="/generative.gif"
+                    />
                 </GenerativeImageWrapper>
+                <Divider />
+
                 <RibbonSection
                     title="PERKS"
                     items={[
