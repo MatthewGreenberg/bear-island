@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
 import { OPENSEA } from '../helpers/links'
+import { sizes } from '../helpers/sizes'
 const StyledMainContent = styled.main`
     display: flex;
     align-items: center;
@@ -11,6 +12,9 @@ const StyledMainContent = styled.main`
     gap: 75px;
     margin: 0 auto;
     margin-top: 100px;
+    @media (max-width: ${sizes.tb}) {
+        flex-direction: column;
+    }
 `
 const StyledImageWrapper = styled.div`
     border-radius: 50%;

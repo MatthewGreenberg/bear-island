@@ -40,16 +40,29 @@ const Divider = styled.div`
     margin: 50px 0;
 `
 
+const GenerativeImageWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+        position: relative;
+        width: 30%;
+    }
+`
+
 export default function Home() {
     return (
         <div className="app">
             <Head>
                 <title>Bear Island</title>
-                <meta name="description" content="Bear Island NFT!" />
+                <meta property="og:title" content="Bear Island" />
+                <meta property="og:image" content="/og.png" />
+                <meta name="description" content="Welcome to Bear Island!" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
+                <meta property="og:video" content={'/bears.mp4'} />
                 <link rel="icon" href="/favicon.ico" />
                 <link
                     rel="preload"
@@ -57,19 +70,32 @@ export default function Home() {
                     as="font"
                     crossOrigin=""
                 />
+                {/* Twitter card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@BearIslandNFT" />
+                <meta name="twitter:creator" content="@BearIslandNFT" />
+                <meta name="twitter:title" content="Bear Island" />
+                <meta
+                    name="twitter:description"
+                    content="Welcome to Bear Island!"
+                />
+                <meta name="twitter:image" content="/og.png" />
             </Head>
             <SiteWrapper>
                 <StyledBG />
                 <PaddingWrapper>
                     <StickyBear />
                     <Header />
-                    {/* <MainContent /> */}
+                    <MainContent />
                 </PaddingWrapper>
                 <Divider />
                 <PaddingWrapper>
                     <ButtonSection />
                 </PaddingWrapper>
                 <Divider />
+                <GenerativeImageWrapper>
+                    <img alt="generative project" src="/generative.gif" />
+                </GenerativeImageWrapper>
                 <RibbonSection
                     title="PERKS"
                     items={[
