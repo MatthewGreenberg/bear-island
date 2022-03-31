@@ -50,6 +50,9 @@ const GenerativeImageWrapper = styled.div`
     #generative {
         position: relative;
         width: 30%;
+        @media (max-width: ${sizes.tb}) {
+            width: 60%;
+        }
     }
 `
 const RibbonWrapper = styled.div`
@@ -64,6 +67,7 @@ const RibbonWrapper = styled.div`
         transform: translate(-50%, 0%);
         font-family: Adelia, sans-serif;
         font-size: 40px;
+        white-space: nowrap;
         @media (max-width: ${sizes.mb}) {
             font-size: 30px;
         }
