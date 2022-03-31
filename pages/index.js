@@ -95,7 +95,7 @@ export default function Home() {
                     crossOrigin=""
                 />
                 {/* Twitter card */}
-                {/* <meta name="twitter:card" content="summary_large_image" /> */}
+                <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@BearIslandNFT" />
                 <meta name="twitter:creator" content="@BearIslandNFT" />
                 <meta name="twitter:title" content="Bear Island" />
